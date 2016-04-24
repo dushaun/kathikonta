@@ -17,4 +17,7 @@ Route::get('/', function () {
 
 Route::auth();
 
-Route::get('/home', 'HomeController@index');
+Route::get('/dashboard', 'DashboardController@index');
+Route::post('/create', 'DashboardController@store');
+Route::patch('/update/{id}', 'DashboardController@update');
+Route::delete('/delete/{id}', 'DashboardController@delete');
