@@ -3,36 +3,81 @@ Vue.http.headers.common['X-CSRF-TOKEN'] = document.querySelector('#token').getAt
 Vue.component('tasks', {
     template: '#tasks-template',
     props: ['list'],
-    created() {
-        this.list = JSON.parse(this.list);
+    created: function() {
+        this.fetchTasks();
+    },
+    methods: {
+        fetchTasks: function () {
+            this.$http.get('/api/list').then(function(tasks) {
+                this.$set('list', tasks.data);
+            })
+        },
+        toggleCompletedFor: function (task) {
+            var id = task.id;
+            task.done = ! task.done;
+            this.$http.patch('/api/check/'+id, task).then(function (task) {
+                console.log(task)
+                this.fetchTasks()
+            })
+        },
+        onDelete: function (task) {
+            var id = task.id;
+            this.$http.delete('api/delete/'+id).then(function (id) {
+                console.log(id)
+                this.fetchTasks()
+            }).catch(function (id) {
+                console.log(id)
+            });
+        }
+    },
+    events: {
+        'taskCreated': function () {
+            this.fetchTasks();
+        }
     }
 });
 
 new Vue({
     el: 'body',
     data: {
-        newTask: {
+        tasks: {
             name: '',
             user_id: ''
         }
     },
     computed: {
+        checked: function() {
+            if ( this.tasks.done ) return 'checked';
+            return '';
+        },
         errors: function() {
-            if ( ! this.newTask ) return true;
+            if ( ! this.tasks.name ) return true;
             return false;
         }
     },
     methods: {
         onSubmitForm: function(e) {
-            // prevent the default action
             e.preventDefault();
-            // Reset input values
-            var task = this.newTask;
-
-            this.newTask = { name: '' };
-            // Send POST ajax request
-            this.$http.post('create', task)
-            $('#myModal').modal( 'hide' );
+            var name = this.tasks.name;
+            var user_id = this.tasks.user_id;
+            var task = { name: name, user_id: user_id }
+            this.tasks = { name: '', user_id: '' };
+            this.$http.post('/api/create', task).then(function (task) {
+                console.log(task);
+                this.handleNewTask();
+            }).catch(function (task) {
+                console.log(task);
+            });
+            $('#createModal').modal( 'hide' );
+        },
+        onEditForm: function (e) {
+            e.preventDefault()
+        },
+        handleNewTask: function () {
+            var _this = this;
+            setTimeout(function () {
+                _this.$broadcast('taskCreated');
+            }, 1000)
         }
     }
 });

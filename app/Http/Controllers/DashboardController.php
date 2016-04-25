@@ -29,13 +29,17 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        $tasks = Auth::user()->tasks;
-        return view('dashboard.index', compact('tasks'));
+        return view('dashboard.index');
     }
 
     public function create()
     {
 
+    }
+
+    public function results()
+    {
+        return Auth::user()->tasks;
     }
 
     /**
@@ -52,9 +56,17 @@ class DashboardController extends Controller
         }
     }
 
-    public function edit()
+    /**
+     * Mark task as done/not done
+     *
+     * @param $id
+     * @param TaskRequest $request
+     */
+    public function check($id, TaskRequest $request)
     {
-
+        $input = $request->all();
+        $task = Task::findOrFail($id);
+        $task->update($input);
     }
 
     /**

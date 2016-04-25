@@ -25,7 +25,7 @@ class TaskRequest extends Request
     {
         return [
             'user_id' => 'required',
-            'name' => 'required|min:10'
+            'name' => 'required|min:3'
         ];
     }
 }

@@ -22,3 +22,8 @@ body {
 .post > form > h4 {
     display: inline-block;
 }
+
+.completed {
+    color: #818181;
+    text-decoration: line-through;
+}

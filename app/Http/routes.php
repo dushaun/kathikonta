@@ -18,6 +18,9 @@ Route::get('/', function () {
 Route::auth();
 
 Route::get('/dashboard', 'DashboardController@index');
-Route::post('/create', 'DashboardController@store');
-Route::patch('/update/{id}', 'DashboardController@update');
-Route::delete('/delete/{id}', 'DashboardController@delete');
+
+Route::get('/api/list', 'DashboardController@results');
+Route::post('/api/create', 'DashboardController@store');
+Route::patch('/api/check/{id}', 'DashboardController@check');
+Route::patch('/api/update/{id}', 'DashboardController@update');
+Route::delete('/api/delete/{id}', 'DashboardController@delete');
