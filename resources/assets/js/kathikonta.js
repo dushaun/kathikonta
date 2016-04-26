@@ -8,7 +8,10 @@ Vue.component('tasks', {
     },
     data: function () {
         return {
-            show: ''
+            show: '',
+            done: '',
+            ordertype: 'created_at',
+            direction: 1
         }
     },
     methods: {
@@ -53,6 +56,11 @@ Vue.component('tasks', {
     events: {
         'taskCreated': function () {
             this.fetchTasks();
+        }
+    },
+    filters: {
+        moment: function (date) {
+            return moment(date).format('Do MMMM YYYY, h:mm a');
         }
     }
 });

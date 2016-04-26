@@ -22,12 +22,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="kathikonta.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/assets/js/kathikonta.js">
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/dashboard/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5099867">
-              <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
-              <folding />
+            <state vertical-scroll-proportion="0.2343542">
+              <caret line="35" column="56" selection-start-line="35" selection-start-column="56" selection-end-line="35" selection-end-column="56" />
+              <folding>
+                <element signature="e#3792#3810#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -50,10 +52,10 @@
         <option value="$PROJECT_DIR$/app/Http/Requests/TaskRequest.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" />
-        <option value="$PROJECT_DIR$/resources/assets/css/kathikonta.css" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/assets/css/kathikonta.css" />
         <option value="$PROJECT_DIR$/resources/assets/js/kathikonta.js" />
+        <option value="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" />
       </list>
     </option>
   </component>
@@ -235,7 +237,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/turing/Sites/Laravel_Projects/kathikonta/resources/assets/js/kathikonta.js&#10;ap&#9;FILE&#9;file:///Users/turing/Sites/Laravel_Projects/kathikonta/resources/views/layouts/app.blade.php&#10;route&#9;FILE&#9;file:///Users/turing/Sites/Laravel_Projects/kathikonta/app/Http/routes.php&#10;task&#9;FILE&#9;file:///Users/turing/Sites/Laravel_Projects/kathikonta/app/Http/Requests/TaskRequest.php&#10;routes&#9;FILE&#9;file:///Users/turing/Sites/Laravel_Projects/kathikonta/app/Http/routes.php&#10;app&#9;FILE&#9;file:///Users/turing/Sites/Laravel_Projects/kathikonta/resources/views/layouts/app.blade.php&#10;rout&#9;FILE&#9;file:///Users/turing/Sites/Laravel_Projects/kathikonta/app/Http/routes.php&#10;authcon&#9;null&#9;null&#10;home&#9;null&#9;null&#10;dashb&#9;null&#9;null&#10;database&#9;FILE&#9;file:///Users/turing/Sites/Laravel_Projects/kathikonta/config/database.php" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/turing/Sites/Laravel_Projects/kathikonta/resources/views/dashboard/index.blade.php&#10;css&#9;FILE&#9;file:///Users/turing/Sites/Laravel_Projects/kathikonta/resources/assets/css/kathikonta.css&#10;ap&#9;FILE&#9;file:///Users/turing/Sites/Laravel_Projects/kathikonta/resources/views/layouts/app.blade.php&#10;route&#9;FILE&#9;file:///Users/turing/Sites/Laravel_Projects/kathikonta/app/Http/routes.php&#10;task&#9;FILE&#9;file:///Users/turing/Sites/Laravel_Projects/kathikonta/app/Http/Requests/TaskRequest.php&#10;routes&#9;FILE&#9;file:///Users/turing/Sites/Laravel_Projects/kathikonta/app/Http/routes.php&#10;app&#9;FILE&#9;file:///Users/turing/Sites/Laravel_Projects/kathikonta/resources/views/layouts/app.blade.php&#10;rout&#9;FILE&#9;file:///Users/turing/Sites/Laravel_Projects/kathikonta/app/Http/routes.php&#10;authcon&#9;null&#9;null&#10;home&#9;null&#9;null&#10;dashb&#9;null&#9;null&#10;database&#9;FILE&#9;file:///Users/turing/Sites/Laravel_Projects/kathikonta/config/database.php" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
   <component name="RunManager">
@@ -508,8 +510,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1461688387000" expanded="true" signature="5:222" placeholder="{...}" />
-            <marker date="1461688387000" expanded="true" signature="230:413" placeholder="{...}" />
+            <marker date="1461712692000" expanded="true" signature="5:222" placeholder="{...}" />
+            <marker date="1461712692000" expanded="true" signature="230:413" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -615,77 +617,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/css/kathikonta.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.93874836">
-          <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
-          <folding>
-            <marker date="1461680065000" expanded="true" signature="5:112" placeholder="{...}" />
-            <marker date="1461680065000" expanded="true" signature="130:222" placeholder="{...}" />
-            <marker date="1461680065000" expanded="true" signature="230:413" placeholder="{...}" />
-            <marker date="1461680065000" expanded="true" signature="433:463" placeholder="{...}" />
-            <marker date="1461680065000" expanded="true" signature="476:534" placeholder="{...}" />
-            <marker date="1461680065000" expanded="true" signature="544:566" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7243675">
-          <caret line="82" column="53" selection-start-line="82" selection-start-column="53" selection-end-line="82" selection-end-column="53" />
+          <caret line="82" column="86" selection-start-line="82" selection-start-column="86" selection-end-line="82" selection-end-column="86" />
           <folding>
-            <marker date="1461688003000" expanded="true" signature="31:3824" placeholder="..." />
-            <marker date="1461688003000" expanded="true" signature="38:1092" placeholder="..." />
-            <marker date="1461688003000" expanded="true" signature="953:1084" placeholder="..." />
-            <marker date="1461688003000" expanded="true" signature="968:1012" placeholder="{...}" />
-            <marker date="1461688003000" expanded="true" signature="1030:1072" placeholder="{...}" />
-            <marker date="1461688003000" expanded="true" signature="1115:3816" placeholder="..." />
-            <marker date="1461688003000" expanded="true" signature="1172:3098" placeholder="..." />
-            <marker date="1461688003000" expanded="true" signature="1204:3087" placeholder="..." />
-            <marker date="1461688003000" expanded="true" signature="1244:1837" placeholder="..." />
-            <marker date="1461688003000" expanded="true" signature="1419:1665" placeholder="..." />
-            <marker date="1461688003000" expanded="true" signature="1769:1818" placeholder="..." />
-            <marker date="1461688003000" expanded="true" signature="1914:3072" placeholder="..." />
-            <marker date="1461688003000" expanded="true" signature="2003:2092" placeholder="..." />
-            <marker date="1461688003000" expanded="true" signature="2196:3053" placeholder="..." />
-            <marker date="1461688003000" expanded="true" signature="2510:3004" placeholder="..." />
-            <marker date="1461688003000" expanded="true" signature="2634:2752" placeholder="..." />
-            <marker date="1461688003000" expanded="true" signature="2820:2974" placeholder="..." />
-            <marker date="1461688003000" expanded="true" signature="3109:3145" placeholder="..." />
+            <marker date="1461692608000" expanded="true" signature="31:3922" placeholder="..." />
+            <marker date="1461692608000" expanded="true" signature="38:1092" placeholder="..." />
+            <marker date="1461692608000" expanded="true" signature="953:1084" placeholder="..." />
+            <marker date="1461692608000" expanded="true" signature="968:1012" placeholder="{...}" />
+            <marker date="1461692608000" expanded="true" signature="1030:1072" placeholder="{...}" />
+            <marker date="1461692608000" expanded="true" signature="1115:3914" placeholder="..." />
+            <marker date="1461692608000" expanded="true" signature="1172:3098" placeholder="..." />
+            <marker date="1461692608000" expanded="true" signature="1204:3087" placeholder="..." />
+            <marker date="1461692608000" expanded="true" signature="1244:1837" placeholder="..." />
+            <marker date="1461692608000" expanded="true" signature="1419:1665" placeholder="..." />
+            <marker date="1461692608000" expanded="true" signature="1769:1818" placeholder="..." />
+            <marker date="1461692608000" expanded="true" signature="1914:3072" placeholder="..." />
+            <marker date="1461692608000" expanded="true" signature="2003:2092" placeholder="..." />
+            <marker date="1461692608000" expanded="true" signature="2196:3053" placeholder="..." />
+            <marker date="1461692608000" expanded="true" signature="2510:3004" placeholder="..." />
+            <marker date="1461692608000" expanded="true" signature="2634:2752" placeholder="..." />
+            <marker date="1461692608000" expanded="true" signature="2820:2974" placeholder="..." />
+            <marker date="1461692608000" expanded="true" signature="3109:3145" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/dashboard/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/assets/css/kathikonta.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6937417">
-          <caret line="23" column="59" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
+        <state vertical-scroll-proportion="1.2250333">
+          <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
           <folding>
-            <marker date="1461688079000" expanded="true" signature="44:2818" placeholder="..." />
-            <marker date="1461688079000" expanded="true" signature="71:1407" placeholder="..." />
-            <marker date="1461688079000" expanded="true" signature="97:214" placeholder="..." />
-            <marker date="1461688079000" expanded="true" signature="148:199" placeholder="..." />
-            <marker date="1461688079000" expanded="true" signature="254:1396" placeholder="..." />
-            <marker date="1461688079000" expanded="true" signature="460:510" placeholder="..." />
-            <marker date="1461688079000" expanded="true" signature="563:1376" placeholder="..." />
-            <marker date="1461688079000" expanded="true" signature="1071:1353" placeholder="..." />
-            <marker date="1461688079000" expanded="true" signature="1532:2816" placeholder="..." />
-            <marker date="1461688079000" expanded="true" signature="1583:2805" placeholder="..." />
-            <marker date="1461688079000" expanded="true" signature="1623:2790" placeholder="..." />
-            <marker date="1461688079000" expanded="true" signature="1666:1913" placeholder="..." />
-            <marker date="1461688079000" expanded="true" signature="2024:2334" placeholder="..." />
-            <marker date="1461688079000" expanded="true" signature="2059:2069" placeholder="..." />
-            <marker date="1461688079000" expanded="true" signature="2377:2625" placeholder="..." />
+            <marker date="1461694356000" expanded="true" signature="5:112" placeholder="{...}" />
+            <marker date="1461694356000" expanded="true" signature="130:222" placeholder="{...}" />
+            <marker date="1461694356000" expanded="true" signature="230:413" placeholder="{...}" />
+            <marker date="1461694356000" expanded="true" signature="433:463" placeholder="{...}" />
+            <marker date="1461694356000" expanded="true" signature="474:497" placeholder="{...}" />
+            <marker date="1461694356000" expanded="true" signature="518:543" placeholder="{...}" />
+            <marker date="1461694356000" expanded="true" signature="613:637" placeholder="{...}" />
+            <marker date="1461694356000" expanded="true" signature="667:691" placeholder="{...}" />
+            <marker date="1461694356000" expanded="true" signature="704:762" placeholder="{...}" />
+            <marker date="1461694356000" expanded="true" signature="772:794" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/js/kathikonta.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5099867">
-          <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
-          <folding />
+        <state vertical-scroll-proportion="0.42876166">
+          <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
+          <folding>
+            <marker date="1461712688000" expanded="true" signature="122:1895" placeholder="{&quot;template&quot;: '#tasks-template'...}" />
+            <marker date="1461712688000" expanded="true" signature="202:236" placeholder="{...}" />
+            <marker date="1461712688000" expanded="true" signature="260:400" placeholder="{...}" />
+            <marker date="1461712688000" expanded="true" signature="277:394" placeholder="{&quot;show&quot;: ''...}" />
+            <marker date="1461712688000" expanded="true" signature="415:1664" placeholder="{...}" />
+            <marker date="1461712688000" expanded="true" signature="449:585" placeholder="{...}" />
+            <marker date="1461712688000" expanded="true" signature="512:574" placeholder="{...}" />
+            <marker date="1461712688000" expanded="true" signature="631:941" placeholder="{...}" />
+            <marker date="1461712688000" expanded="true" signature="774:857" placeholder="{...}" />
+            <marker date="1461712688000" expanded="true" signature="881:930" placeholder="{...}" />
+            <marker date="1461712688000" expanded="true" signature="982:1020" placeholder="{...}" />
+            <marker date="1461712688000" expanded="true" signature="1056:1361" placeholder="{...}" />
+            <marker date="1461712688000" expanded="true" signature="1162:1277" placeholder="{...}" />
+            <marker date="1461712688000" expanded="true" signature="1301:1350" placeholder="{...}" />
+            <marker date="1461712688000" expanded="true" signature="1397:1658" placeholder="{...}" />
+            <marker date="1461712688000" expanded="true" signature="1496:1577" placeholder="{...}" />
+            <marker date="1461712688000" expanded="true" signature="1599:1646" placeholder="{...}" />
+            <marker date="1461712688000" expanded="true" signature="1678:1763" placeholder="{...}" />
+            <marker date="1461712688000" expanded="true" signature="1715:1757" placeholder="{...}" />
+            <marker date="1461712688000" expanded="true" signature="1778:1893" placeholder="{...}" />
+            <marker date="1461712688000" expanded="true" signature="1812:1887" placeholder="{...}" />
+            <marker date="1461712688000" expanded="true" signature="1907:2746" placeholder="{&quot;el&quot;: 'body'...}" />
+            <marker date="1461712688000" expanded="true" signature="1935:2015" placeholder="{...}" />
+            <marker date="1461712688000" expanded="true" signature="1952:2009" placeholder="{&quot;name&quot;: ''...}" />
+            <marker date="1461712688000" expanded="true" signature="2031:2153" placeholder="{...}" />
+            <marker date="1461712688000" expanded="true" signature="2060:2147" placeholder="{...}" />
+            <marker date="1461712688000" expanded="true" signature="2168:2744" placeholder="{...}" />
+            <marker date="1461712688000" expanded="true" signature="2204:2738" placeholder="{...}" />
+            <marker date="1461712688000" expanded="true" signature="2507:2605" placeholder="{...}" />
+            <marker date="1461712688000" expanded="true" signature="2629:2679" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/dashboard/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2343542">
+          <caret line="35" column="56" selection-start-line="35" selection-start-column="56" selection-end-line="35" selection-end-column="56" />
+          <folding>
+            <element signature="e#3792#3810#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

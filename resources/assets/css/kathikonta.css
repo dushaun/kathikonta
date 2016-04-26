@@ -22,6 +22,19 @@ body {
 .post > form > h4 {
     display: inline-block;
 }
+.post > p {
+    color: #717171;
+}
+.post > .form-group {
+    padding-top: 7px;
+}
+.post > .form-group > input[type=text],
+.post > .form-group > button {
+    display: inline;
+}
+.post > .form-group > button {
+    margin-top: 7px;
+}
 
 .completed {
     color: #818181;

@@ -12,14 +12,44 @@
             <h1 class="text-center">Your To Do list</h1>
 
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#createModal">
-                Create Task
-            </button>
+            <div class="form-group">
+                <button type="button" class="btn btn-primary form-control" data-toggle="modal" data-target="#createModal">
+                    Create Task
+                </button>
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn btn-primary btn-xs" v-on:click="done = ''">
+                    All Tasks
+                </button>
+                <button type="button" class="btn btn-success btn-xs" v-on:click="done = 1">
+                    Tasks Done
+                </button>
+                <button type="button" class="btn btn-warning btn-xs" v-on:click="done = 0">
+                    Tasks Not Done
+                </button>
+            </div>
 
-            <div class="post" v-for="task in list" >
+            <div class="form-group">
+                <button v-if="ordertype === 'updated_at'" type="button" class="btn btn-primary btn-xs" v-on:click="ordertype = 'created_at'">
+                    Order By Creation
+                </button>
+                <button v-if="ordertype === 'created_at'" type="button" class="btn btn-primary btn-xs" v-on:click="ordertype = 'updated_at'">
+                    Order By Update
+                </button>
+                <button v-if="direction === -1" type="button" class="btn btn-warning btn-xs" v-on:click="direction = direction * -1">
+                    Display in Ascending Order
+                </button>
+                <button v-if="direction === 1" type="button" class="btn btn-warning btn-xs" v-on:click="direction = direction * -1">
+                    Display in Descending Order
+                </button>
+            </div>
+
+            <div class="post" v-for="task in list | filterBy done in 'done' | orderBy ordertype direction">
+                <p v-if="ordertype === 'created_at'">Created at: @{{ task.created_at | moment }}</p>
+                <p v-if="ordertype === 'updated_at'">Updated at: @{{ task.updated_at | moment }}</p>
                 <h4 :class="{ 'completed': task.done }" v-on:click="toggleCompletedFor(task)"> @{{ task.name }}</h4>
-                <button type="button" class="btn btn-danger" v-on:click="onDelete(task)"><i class="fa fa-times" aria-hidden="true"></i></button>
-                <button type="button" v-on:click="toggleEditInput(task.id)" class="btn btn-primary" value="@{{ task.id }}"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                <button type="button" class="btn btn-danger btn-xs" v-on:click="onDelete(task)"><i class="fa fa-times" aria-hidden="true"></i></button>
+                <button type="button" v-on:click="toggleEditInput(task.id)" class="btn btn-primary btn-xs" value="@{{ task.id }}"><i class="fa fa-pencil" aria-hidden="true"></i></button>
                 <div class="form-group" v-if="show === task.id">
                     <input class="form-control" type="text" name="name" value="@{{ task.name }}" v-model="task.name" v-on:keyup.enter="editTask(task)">
                     <button class="btn btn-warning btn-xs" v-on:click="toggleEditInput('')">Close</button>
