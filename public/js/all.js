@@ -28,24 +28,10 @@ Vue.component('tasks', {
             }).catch(function (id) {
                 console.log(id)
             });
-        },
-        //onEdit: function (task) {
-        //    var id = task.id;
-        //    var name = task.name;
-        //    var user_id = task.user_id;
-        //    var task_edit = { id: id, name: name, user_id: user_id }
-        //    task = { name: '', user_id: '' };
-        //    this.$http.update('api/update/'+id).then(function (task) {
-        //        console.log(task)
-        //    })
-        //    this.fetchTasks()
-        //}
+        }
     },
     events: {
         'taskCreated': function () {
-            this.fetchTasks();
-        },
-        'taskDeleted': function () {
             this.fetchTasks();
         }
     }
@@ -60,10 +46,6 @@ new Vue({
         }
     },
     computed: {
-        checked: function() {
-            if ( this.tasks.done ) return 'checked';
-            return '';
-        },
         errors: function() {
             if ( ! this.tasks.name ) return true;
             return false;
@@ -75,10 +57,10 @@ new Vue({
             var name = this.tasks.name;
             var user_id = this.tasks.user_id;
             var task = { name: name, user_id: user_id }
-            this.tasks = { name: '', user_id: '' };
+            this.tasks = { name: '', user_id: user_id };
             this.$http.post('/api/create', task).then(function (task) {
                 console.log(task);
-                this.handleNewTask();
+                this.$broadcast('taskCreated');
             }).catch(function (task) {
                 console.log(task);
             });
@@ -86,12 +68,6 @@ new Vue({
         },
         onEditForm: function (e) {
             e.preventDefault()
-        },
-        handleNewTask: function () {
-            var _this = this;
-            setTimeout(function () {
-                _this.$broadcast('taskCreated');
-            }, 1000)
         }
     }
 });
