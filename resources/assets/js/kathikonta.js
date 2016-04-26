@@ -6,6 +6,11 @@ Vue.component('tasks', {
     created: function() {
         this.fetchTasks();
     },
+    data: function () {
+        return {
+            show: ''
+        }
+    },
     methods: {
         fetchTasks: function () {
             this.$http.get('/api/list').then(function(tasks) {
@@ -18,6 +23,21 @@ Vue.component('tasks', {
             this.$http.patch('/api/check/'+id, task).then(function (task) {
                 console.log(task)
                 this.fetchTasks()
+            }).catch(function (task) {
+                console.log(task)
+            })
+        },
+        toggleEditInput: function (id) {
+            this.show = id
+        },
+        editTask: function (task) {
+            var id = task.id;
+            this.$http.patch('api/update/'+id, task).then(function (task) {
+                console.log(task)
+                this.show = '';
+                this.fetchTasks()
+            }).catch(function (task) {
+                console.log(task)
             })
         },
         onDelete: function (task) {
@@ -65,13 +85,6 @@ new Vue({
                 console.log(task);
             });
             $('#createModal').modal( 'hide' );
-        },
-        onEditForm: function (e) {
-            e.preventDefault()
         }
     }
 });
-
-$('#myModal').on('shown.bs.modal', function () {
-    $('#myInput').focus()
-})
