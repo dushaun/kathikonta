@@ -17,6 +17,9 @@ elixir(function(mix) {
             'kathikonta.css'
         ])
         .scripts([
+            'vue.js',
+            'vue-resource.js',
+            'moment.min.js',
             'kathikonta.js'
         ])
         .version(['css/all.css', 'js/all.js']);

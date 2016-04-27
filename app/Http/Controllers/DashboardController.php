@@ -23,7 +23,7 @@ class DashboardController extends Controller
     }
 
     /**
-     * Return Users to do list
+     * Return Users Dashboard
      *
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
@@ -32,11 +32,11 @@ class DashboardController extends Controller
         return view('dashboard.index');
     }
 
-    public function create()
-    {
-
-    }
-
+    /**
+     * Return Users To Do List
+     *
+     * @return mixed
+     */
     public function results()
     {
         return Auth::user()->tasks;
